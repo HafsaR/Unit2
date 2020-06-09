@@ -37,7 +37,7 @@ namespace unit2
             //float theFloat = 3.555f;
             //decimal x = theFloat;
 
-            string myString = "hello";
+            string myString = "hello there";
             myString += " world";
             Console.WriteLine(myString);
 
