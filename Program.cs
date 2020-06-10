@@ -6,43 +6,91 @@ namespace unit2
     {
         static void Main(string[] args)
         {
-            // int currentYear = 2020;
+            Console.WriteLine("What is the age of the buyer? ");
 
-            string myName = "Regan"; //String is double quotes
+            string stringAge = Console.ReadLine();
+            int age = Convert.ToInt32(stringAge);
+            decimal price = 0m;
 
-            bool isWearingBlue = false;
+            if (age <= 5) {
+                price = 0m;
+            }
+            else if (age >= 6 && age <= 14) {
+                price = 8.99m;
+            } 
+            else if (age > 14 && age <= 65) {
+                price = 12.99m;
+            }
+            else {
+                price = 7.99m;
+            }
 
-            char symbol = 'V'; // Character is single quotes
+            Console.WriteLine("Ticket Price: " + price);
 
-            // 8 bits
-            // byte byte1 = 255; // Unsigned: 0 -> 255
-            // sbyte sbyte1 = -100; // Signed: -128 -> 127
 
-            // // 16 bits
-            // short short1 = -32767; // Signed: -32768 -> +32767 
-            // ushort ushort1 = 65535; // Usigned: 0 -> 65535 (2^16) - 1
+            // for (int i = 1; i < 50; i++) {               
+            //     // if i is divisible by 3. 
+            //     Console.WriteLine("---i: " + i);
+            //     if (i%3 == 0) {
+            //         Console.WriteLine("i is divisible by 3");
+            //         continue;
+            //         Console.WriteLine("Hello!");
+            //     }
+            //     Console.WriteLine("end of iteration");
+            // }
 
-            // 32 bits
-            //uint x = 3892372; // Unsigned: 0 -> (2^32) - 1
-            //int y = -2147483648; // Signed: -2147483648 -> +2147483647 (-2^31 -> (2^31) - 1)
 
-            // 64 bits
-            //ulong x = 88888888888888999;
-            //long y = -88888888888888999;
 
-            // float myFloat = 1.5f;
-            // double myDouble = 1.00004;
-            // decimal myDecimal = 1.000000000000000012m;
+            // int j = 0;
+            // while (j < 50) {
+            //     Console.WriteLine("hello");
+            //     j += 5;
+            // }
 
-            //float theFloat = 3.555f;
-            //decimal x = theFloat;
 
-            string myString = "hello there";
-            myString += " world";
-            Console.WriteLine(myString);
 
-            //Console.WriteLine(x);
-            //Console.WriteLine("y is " + y);
+
+            //bool isSunny = false;
+            //decimal temperature = 12m; // degrees celsius
+
+            // if (isSunny && (temperature > 4)) 
+            // {
+            //     Console.WriteLine("I will go outside");
+            //     x = 10;
+
+            //     if (temperature > 15) {
+            //         Console.WriteLine("I will wear a t-shirt");
+            //         x = 100;
+            //     } 
+            //     if (temperature > 30)
+            //     {
+            //         Console.WriteLine("It is really hot out!");
+            //         x = 1000;
+            //     } 
+            //     if (temperature > 50) {
+            //         x = 3000;
+            //     }
+            // } 
+            // else 
+            // {
+            //     Console.WriteLine("I will NOT go outside");
+            //     x = -2;
+            // }
+
+
+/*
+        for (int i = 1; 1<= 100; i++;)
+        
+        if (i % 15 == 0);
+            {Console.WriteLine("Fizzbuzz");}
+        
+        else (i % 5 == 0);
+            {Console.WriteLine("Buzz");}
+
+        else (i % 3 == 0);
+            {Console.WriteLine("Fizz");}
+
+*/
 
 
         }
