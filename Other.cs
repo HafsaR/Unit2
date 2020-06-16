@@ -185,7 +185,7 @@ namespace unit2
         public static void FizzBuzz()
         {
 
-for (int i = 1; i<= 100; i++) {
+            for (int i = 1; i<= 100; i++) {
                 Console.WriteLine(i);
                 if (i % 15 == 0) 
                 {
@@ -203,6 +203,82 @@ for (int i = 1; i<= 100; i++) {
 
             }
 
+        }
+    
+        public static void Exercises() {
+            int a = 0;
+            for (int i = 0; i < 10; i++) {
+                a += i;
+            }
+
+            int b = 10;
+            for (int i = 5; i > 0; i--) {
+                b *= i;
+            }
+
+            int c = 0;
+            for (int i = 0; i <= 5; i++) {
+                c += i*i;
+            }
+
+            int d = 5;
+            for (int i = 5; i >= 0; i--) {
+                d *= (i + i);
+            }
+
+            int e = 0;
+            for (int i = e; i < 5; i += e) {
+                e++;
+            }
+
+            int f = 0;
+            for (int i = 0; i <= 10; i++) {
+                if (i % 2 == 0) {
+                    f++;
+                }
+            }
+
+            int g = 1;
+            for (int i = 10; i <= 20; i++) {
+                if (i%2 == 0) {
+                    g++;
+                } else {
+                    g--;
+                }
+            }
+
+            int h = 1;
+            int j = 0;
+            while (j <= 5) {
+                if (h*h + - 5 < 10) {
+                    h--;
+                }
+                h += 2;
+                j++;
+            }
+
+            
+            for (int i = 0; i < 5; i++) {
+                for (int k = 0; k < 3; k++) {
+                    Console.Write($"({i},{k}) ");
+                }
+                Console.WriteLine();
+            }
+
+            int m = 0;
+            for (int i = 0; i < 5; i++) {
+                for (int i2 = 0; i2 < 3; i2++) {
+                    m++;
+                }
+            }
+
+            int n = 0;
+            for (int i = 0; i <= 5; i++) {
+                for (int i2 = 0; i2 <= 3; i2++) {
+                    n++;
+                }
+            }
+            
         }
     }
 }
